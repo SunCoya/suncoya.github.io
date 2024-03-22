@@ -1,23 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SunCoya no WebSite</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin: 5%;
+        }
+
+        h2 {   
+            border-left-style: solid;
+            border-width:5px;
+            padding-left: 2%;
+            margin-left: 2%;
+            border-color: pink;
+            margin-top: 5%;
+        }
+
+        p{
+            margin: 2%;
+            /* 设置空两格 */
+            text-indent:2em;
+        }
+
+        .content {
+            /* 设置父元素不被子元素影响位置 */
+            overflow: auto;
+            background-color: rgba(256, 256, 256, 0.6);
+            /* vh表示可视窗口占比 */
+            height: 90vh;
+            margin: 5vh auto;
+            width: 80%;
+            /* 阴影 */
+            box-shadow: 10px 10px 5px grey;
+            /* 圆角 */
+            border-radius: 25px;
+        }
+
+        .background {
+            overflow: auto;
+            background-image: linear-gradient(to bottom right, pink, skyblue);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
+
 <body>
 </body>
-    <h1>
-        Welcome to SunCoya's Web!
-    </h1>
-    <h2>
-        每日写博客并逐渐更新，访问文件请访问路径：/html/xxxxxx.html(后面为日期，如240321.html)
-    </h2>
-    <h2>
-        qq:3342824499
-    </h2>
-    <p>
-        什么？你说导航？额...在学了（其实是根本不想现在写）
-    </p>
+<div class="background">
+    <div class="content">
+        <h1>
+            Welcome to SunCoya's Web!
+        </h1>
+        <h2>
+            博客主要内容
+        </h2>
+        <p>
+            记录学习情况，记录学习感想，能自己改样式，相对于CSDN有更强的灵活性。
+        </p>
+        <h2>
+            如何查看博客内容
+        </h2>
+        <p>
+            查看博客内容应在域名后加入/html/xxxxxx.html
+            如<strong>/html/20240231.html</strong>。
+            导航觉得有点麻烦，先搁着，学习完部分知识之后再来完善。
+        </p>
+        <h2>
+            联系方式
+        </h2>
+        <p>
+            QQ：3342824499
+        </p>
+    </div>
+</div>
 </body>
+
 </html>
