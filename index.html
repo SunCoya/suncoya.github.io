@@ -11,19 +11,19 @@
             margin: 5%;
         }
 
-        h2 {   
+        h2 {
             border-left-style: solid;
-            border-width:5px;
+            border-width: 5px;
             padding-left: 2%;
             margin-left: 2%;
             border-color: pink;
             margin-top: 5%;
         }
 
-        p{
+        p {
             margin: 2%;
             /* 设置空两格 */
-            text-indent:2em;
+            text-indent: 2em;
         }
 
         .content {
@@ -48,6 +48,30 @@
             height: 100%;
         }
 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
 
         * {
             margin: 0;
@@ -59,6 +83,10 @@
 <body>
 </body>
 <div class="background">
+    <ul>
+        <li><a href="diary/240321.html">21</a></li>
+        <li><a href="diary/240322.html">22</a></li>
+    </ul>
     <div class="content">
         <h1>
             Welcome to SunCoya's Web!
@@ -68,14 +96,6 @@
         </h2>
         <p>
             记录学习情况，记录学习感想，能自己改样式，相对于CSDN有更强的灵活性。
-        </p>
-        <h2>
-            如何查看博客内容
-        </h2>
-        <p>
-            查看博客内容应在域名后加入/html/xxxxxx.html
-            如<strong>/html/20240231.html</strong>。
-            导航觉得有点麻烦，先搁着，学习完部分知识之后再来完善。
         </p>
         <h2>
             联系方式
