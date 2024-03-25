@@ -18,6 +18,11 @@ p{
     text-indent:2em;
 }
 
+img{
+    width: 80%;
+    margin: 0 10%;
+}
+
 .content {
     /* 设置父元素不被子元素影响位置 */
     overflow: auto;
